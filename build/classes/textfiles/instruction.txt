@@ -1,0 +1,8 @@
+Instruction
+
+How to play:
+
+1. Use left and right arrow button to switch lanes.
+2. Don't get hit by other cars.
+3. If you want to play again, close the window and press start again.
+4. Time yourself to see how long you survive, a timer will be added in future updates.
