@@ -13,11 +13,12 @@ import java.util.Random;
 public class Lanes extends Sprite {
 
     private final int initLanes_y = -100;
-    private int speedOption = 1;
+    private double speedOption = 0.5;
         
-    public Lanes(int x, int y, int speedOption) {
+    public Lanes(double x, double y, double speedOption) {
         super(x, y);
         this.speedOption = speedOption;
+        
         initLanes();
     }
 
@@ -29,7 +30,7 @@ public class Lanes extends Sprite {
 
     public void move() {
 
-        if (y > 2900) {
+        if (y > 1240) {
             y = initLanes_y;
         }
 

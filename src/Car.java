@@ -3,11 +3,11 @@ import java.util.ArrayList;
 
 public class Car extends Sprite {
 
-    private int dx;
-    private int dy;
+    private double dx;
+    private double dy;
 
 
-    public Car(int x, int y) {
+    public Car(double x, double y) {
         super(x, y);
 
         initCar();

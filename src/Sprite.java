@@ -4,19 +4,20 @@ import javax.swing.ImageIcon;
 
 public class Sprite {
 
-    protected int x;
-    protected int y;
+    protected double x;
+    protected double y;
     protected int width;
     protected int height;
     protected boolean vis;
     protected Image image;
 
-    public Sprite(int x, int y) {
+    public Sprite(double x, double y) {
 
         this.x = x;
         this.y = y;
         vis = true;
     }
+
 
     protected void getImageDimensions() {
 
@@ -35,11 +36,11 @@ public class Sprite {
     }
 
     public int getX() {
-        return x;
+        return (int)x;
     }
 
     public int getY() {
-        return y;
+        return (int)y;
     }
 
     public boolean isVisible() {
@@ -51,6 +52,6 @@ public class Sprite {
     }
 
     public Rectangle getBounds() {
-        return new Rectangle(x, y, width, height);
+        return new Rectangle((int)x,(int) y, width, height);
     }
 }
